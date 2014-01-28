@@ -4,6 +4,7 @@ body {
 }
 .hoverme {
   position: relative;
+  display: inline-block;
 }
 .hoverme .tooltip {
   position: absolute;
