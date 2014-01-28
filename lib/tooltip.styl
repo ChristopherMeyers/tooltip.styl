@@ -1,5 +1,8 @@
 tooltip($selector) {
+  position: relative;
   & {$selector} {
+    position: absolute;
+    bottom: 100%;
     visibility: hidden;
   }
   &:hover, &:focus {

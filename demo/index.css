@@ -2,7 +2,12 @@ body {
   width: 900px;
   margin: 0 auto;
 }
+.hoverme {
+  position: relative;
+}
 .hoverme .tooltip {
+  position: absolute;
+  bottom: 100%;
   visibility: hidden;
 }
 .hoverme:hover .tooltip,
