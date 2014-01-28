@@ -23,3 +23,9 @@ body {
 .hoverme:focus .tooltip {
   visibility: visible;
 }
+.hoverme .tooltip {
+  padding: 0.3em 0.75em;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
+}
