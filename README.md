@@ -1,4 +1,4 @@
 tooltip.styl
 ============
 
-Stylus tooltip library inspired by hint.css that supports html
+Inspired by [hint.css](https://github.com/chinchang/hint.css), but with the desire to work with full html for css content.
