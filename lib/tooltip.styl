@@ -1,4 +1,6 @@
 tooltip($selector) {
+  error('bad type for $selector') unless $selector is a 'string'
+
   position: relative;
   display: inline-block;
   & {$selector} {
