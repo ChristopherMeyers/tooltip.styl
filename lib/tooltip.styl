@@ -1,5 +1,10 @@
 tooltip($selector) {
   & {$selector} {
-    display: none;
+    visibility: hidden;
+  }
+  &:hover, &:focus {
+    {$selector} {
+      visibility: visible;
+    }
   }
 }

@@ -3,5 +3,9 @@ body {
   margin: 0 auto;
 }
 .hoverme .tooltip {
-  display: none;
+  visibility: hidden;
+}
+.hoverme:hover .tooltip,
+.hoverme:focus .tooltip {
+  visibility: visible;
 }
