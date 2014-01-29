@@ -1,0 +1,21 @@
+.hoverme {
+  position: relative;
+  display: inline-block;
+}
+.hoverme .tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  visibility: hidden;
+  white-space: nowrap;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.hoverme:hover .tooltip,
+.hoverme:focus .tooltip {
+  visibility: visible;
+}
