@@ -3,12 +3,14 @@ tooltip-skin-basic_floating_box(
                                 $padding = 0.3em .75em,
                                 $border = 1px solid #ccc,
                                 $background = white,
-                                $box-shadow = 0 3px 10px 0 rgba(0,0,0,.4)) {
+                                $box-shadow = 0 3px 10px 0 rgba(0,0,0,.4),
+                                $yOffset = 0.5em) {
   {$selector} {
     padding: $padding;
     border: $border;
     background: $background;
     box-shadow: $box-shadow;
+    margin-bottom: $yOffset;
   }
 }
 
