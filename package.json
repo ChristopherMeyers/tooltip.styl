@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "name": "tooltip.styl",
+    "test": "casperjs test tests/functional.js"
+  }
+}
