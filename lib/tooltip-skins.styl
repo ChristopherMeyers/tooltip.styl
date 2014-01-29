@@ -11,3 +11,32 @@ tooltip-skin-basic_floating_box(
     box-shadow: $box-shadow;
   }
 }
+
+tooltip-skin-arrow(
+                                $selector,
+                                $size = 7px,
+                                $border-color = #ccc,
+                                $border-width = 2px,
+                                $background = white) {
+  {$selector} {
+    &:before, &:after {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      content: "";
+      transform: translateX(-50%);
+    }
+    &:after {
+      z-index: 2;
+      border: $size solid transparent;
+      border-top-color: white;
+      border-bottom: none;
+    }
+    &:before {
+      z-index: 1;
+      border: ($size + $border-width) solid transparent;
+      border-top-color: $border-color;
+      border-bottom: none;
+    }
+  }
+}
