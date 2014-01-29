@@ -2,5 +2,9 @@
   "scripts": {
     "name": "tooltip.styl",
     "test": "casperjs test tests/functional.js"
+  },
+  "dependencies": {
+    "phantomjs": "*",
+    "casperjs": "*"
   }
 }
