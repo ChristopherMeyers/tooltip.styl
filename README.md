@@ -1,4 +1,4 @@
-tooltip.styl
+tooltip.styl [![Build Status](https://travis-ci.org/ChristopherMeyers/tooltip.styl.png?branch=master)](https://travis-ci.org/ChristopherMeyers/tooltip.styl)
 ============
 
 Inspired by [hint.css](https://github.com/chinchang/hint.css), but with the desire to work with full html for tooltip content.
