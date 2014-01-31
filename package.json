@@ -1,4 +1,6 @@
 {
+  "name": "tooltip.styl",
+  "description": "Full HTML tooltip library for Stylus",
   "scripts": {
     "name": "tooltip.styl",
     "test": "casperjs test tests/functional.js"
