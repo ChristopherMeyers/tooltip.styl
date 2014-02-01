@@ -6,7 +6,7 @@ transform($val) {
   transform: $val;
 }
 
-tooltip($selector, $mouseOver = false) {
+tooltip($selector, $mouseOver = false, $alignment = 'center') {
   error('bad type for $selector') unless $selector is a 'string'
 
   position: relative;
@@ -14,10 +14,18 @@ tooltip($selector, $mouseOver = false) {
   & {$selector} {
     position: absolute;
     bottom: 100%;
-    left: 50%;
+    if ($alignment == 'left'){
+      left: 0%;
+    } else if ($alignment == 'center') {
+      left: 50%;
+    } else {
+      error('bad type for $alignment');
+    }
     visibility: hidden;
     white-space: nowrap;
-    transform: translateX(-50%);
+    if ($alignment == 'center') {
+      transform: translateX(-50%);
+    }
     unless ($mouseOver) {
       pointer-events: none;
     }

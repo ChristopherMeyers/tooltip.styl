@@ -19,3 +19,19 @@
 .hoverme:focus .tooltip {
   visibility: visible;
 }
+.hoverme-left {
+  position: relative;
+  display: inline-block;
+}
+.hoverme-left .tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 0%;
+  visibility: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.hoverme-left:hover .tooltip,
+.hoverme-left:focus .tooltip {
+  visibility: visible;
+}
