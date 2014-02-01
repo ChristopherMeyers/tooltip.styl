@@ -35,3 +35,19 @@
 .hoverme-left:focus .tooltip {
   visibility: visible;
 }
+.hoverme-right {
+  position: relative;
+  display: inline-block;
+}
+.hoverme-right .tooltip {
+  position: absolute;
+  bottom: 100%;
+  right: 0%;
+  visibility: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.hoverme-right:hover .tooltip,
+.hoverme-right:focus .tooltip {
+  visibility: visible;
+}
