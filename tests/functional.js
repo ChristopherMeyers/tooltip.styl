@@ -31,7 +31,7 @@ casper.test.begin('tooltip is positioned', 2, function(test) {
         var tooltipCenter = tooltipBounds['left']+(tooltipBounds['width']/2);
         var containerCenter = containerBounds['left']+(containerBounds['width']/2);
 
-        test.assert(tooltipCenter < (containerCenter + 1) && tooltipCenter > (containerCenter - 1), "tooltip centered");
+        test.assertEquals(~~(tooltipCenter), ~~(containerCenter), "tooltip centered");
 
         test.assertEquals(tooltipBounds['top']+tooltipBounds['height'], containerBounds['top'], "tooptip above target");
     }).run(function() {
