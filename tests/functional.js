@@ -24,7 +24,7 @@ casper.test.begin('basic tooltip is functional', 10, function(test) {
     });
 });
 
-casper.test.begin('tooltip is positioned', 1, function(test) {
+casper.test.begin('tooltip is positioned', 2, function(test) {
     casper.start("tests/functional.html", function() {
         var tooltipBounds = this.getElementBounds(x('/html/body/div/div[1]'));
         var containerBounds = this.getElementBounds(x('/html/body/div'));
@@ -32,6 +32,8 @@ casper.test.begin('tooltip is positioned', 1, function(test) {
         var containerCenter = containerBounds['left']+(containerBounds['width']/2);
 
         test.assert(tooltipCenter < (containerCenter + 1) && tooltipCenter > (containerCenter - 1), "tooltip centered");
+
+        test.assertEquals(tooltipBounds['top']+tooltipBounds['height'], containerBounds['top'], "tooptip above target");
     }).run(function() {
         test.done();
     });
