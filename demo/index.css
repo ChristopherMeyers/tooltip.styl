@@ -35,12 +35,12 @@ body {
   position: absolute;
   top: 100%;
   left: 50%;
-  content: "";
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
+  content: "";
 }
 .hoverme.skin-arrow .tooltip:after {
   z-index: 2;
@@ -81,13 +81,13 @@ body {
 .hoverme-left.skin-arrow .tooltip:after {
   position: absolute;
   top: 100%;
-  left: 50%;
-  content: "";
+  left: 21px;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
+  content: "";
 }
 .hoverme-left.skin-arrow .tooltip:after {
   z-index: 2;
@@ -128,13 +128,13 @@ body {
 .hoverme-right.skin-arrow .tooltip:after {
   position: absolute;
   top: 100%;
-  left: 50%;
+  right: 21px;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translateX(50%);
   content: "";
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
 }
 .hoverme-right.skin-arrow .tooltip:after {
   z-index: 2;

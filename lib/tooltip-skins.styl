@@ -1,5 +1,6 @@
 tooltip-skin-basic_floating_box(
                                 $selector,
+                                $alignment = 'center',
                                 $padding = 0.3em .75em,
                                 $border = 1px solid #ccc,
                                 $background = white,
@@ -16,6 +17,7 @@ tooltip-skin-basic_floating_box(
 
 tooltip-skin-arrow(
                     $selector,
+                    $alignment = 'center',
                     $size = 7px,
                     $border-color = #ccc,
                     $border-width = 2px,
@@ -24,9 +26,19 @@ tooltip-skin-arrow(
     &:before, &:after {
       position: absolute;
       top: 100%;
-      left: 50%;
+      if ($alignment == 'left'){
+        left: $size * 3;
+        transform: translateX(-50%);
+      } else if ($alignment == 'center') {
+        left: 50%;
+        transform: translateX(-50%);
+      } else if ($alignment == 'right') {
+        right: $size * 3;
+        transform: translateX(50%);
+      } else {
+        error('bad type for $alignment');
+      }
       content: "";
-      transform: translateX(-50%);
     }
     &:after {
       z-index: 2;
