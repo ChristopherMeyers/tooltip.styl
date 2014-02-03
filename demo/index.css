@@ -54,3 +54,97 @@ body {
   border-top-color: #ccc;
   border-bottom: none;
 }
+.hoverme-left {
+  position: relative;
+  display: inline-block;
+}
+.hoverme-left .tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 0%;
+  visibility: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.hoverme-left:hover .tooltip,
+.hoverme-left:focus .tooltip {
+  visibility: visible;
+}
+.hoverme-left.skin-box .tooltip {
+  padding: 0.3em 0.75em;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
+  margin-bottom: 0.5em;
+}
+.hoverme-left.skin-arrow .tooltip:before,
+.hoverme-left.skin-arrow .tooltip:after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  content: "";
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.hoverme-left.skin-arrow .tooltip:after {
+  z-index: 2;
+  border: 7px solid transparent;
+  border-top-color: #fff;
+  border-bottom: none;
+}
+.hoverme-left.skin-arrow .tooltip:before {
+  z-index: 1;
+  border: 9px solid transparent;
+  border-top-color: #ccc;
+  border-bottom: none;
+}
+.hoverme-right {
+  position: relative;
+  display: inline-block;
+}
+.hoverme-right .tooltip {
+  position: absolute;
+  bottom: 100%;
+  right: 0%;
+  visibility: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.hoverme-right:hover .tooltip,
+.hoverme-right:focus .tooltip {
+  visibility: visible;
+}
+.hoverme-right.skin-box .tooltip {
+  padding: 0.3em 0.75em;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
+  margin-bottom: 0.5em;
+}
+.hoverme-right.skin-arrow .tooltip:before,
+.hoverme-right.skin-arrow .tooltip:after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  content: "";
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.hoverme-right.skin-arrow .tooltip:after {
+  z-index: 2;
+  border: 7px solid transparent;
+  border-top-color: #fff;
+  border-bottom: none;
+}
+.hoverme-right.skin-arrow .tooltip:before {
+  z-index: 1;
+  border: 9px solid transparent;
+  border-top-color: #ccc;
+  border-bottom: none;
+}

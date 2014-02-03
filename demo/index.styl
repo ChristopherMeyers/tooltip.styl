@@ -8,12 +8,30 @@ body {
 
 .hoverme {
   tooltip(".tooltip")
+  &.skin-box {
+    tooltip-skin-basic_floating_box(".tooltip")
+  }
+  &.skin-arrow {
+    tooltip-skin-arrow(".tooltip")
+  }
 }
 
-.hoverme.skin-box {
-  tooltip-skin-basic_floating_box(".tooltip")
+.hoverme-left {
+  tooltip(".tooltip", $alignment: left)
+  &.skin-box {
+    tooltip-skin-basic_floating_box(".tooltip", $alignment: left)
+  }
+  &.skin-arrow {
+    tooltip-skin-arrow(".tooltip", $alignment: left)
+  }
 }
 
-.hoverme.skin-arrow {
-  tooltip-skin-arrow(".tooltip")
+.hoverme-right {
+  tooltip(".tooltip", $alignment: right)
+  &.skin-box {
+    tooltip-skin-basic_floating_box(".tooltip", $alignment: right)
+  }
+  &.skin-arrow {
+    tooltip-skin-arrow(".tooltip", $alignment: right)
+  }
 }
