@@ -35,3 +35,13 @@ body {
     tooltip-skin-arrow(".tooltip", $alignment: right)
   }
 }
+
+.hoverme-full {
+  tooltip(".tooltip", $alignment: full)
+  &.skin-box {
+    tooltip-skin-basic_floating_box(".tooltip", $alignment: full)
+  }
+  &.skin-arrow {
+    tooltip-skin-arrow(".tooltip", $alignment: full)
+  }
+}

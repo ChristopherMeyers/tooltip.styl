@@ -148,3 +148,49 @@ body {
   border-top-color: #ccc;
   border-bottom: none;
 }
+.hoverme-full {
+  position: relative;
+  display: inline-block;
+}
+.hoverme-full .tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 0%;
+  visibility: hidden;
+  pointer-events: none;
+}
+.hoverme-full:hover .tooltip,
+.hoverme-full:focus .tooltip {
+  visibility: visible;
+}
+.hoverme-full.skin-box .tooltip {
+  padding: 0.3em 0.75em;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
+  margin-bottom: 0.5em;
+}
+.hoverme-full.skin-arrow .tooltip:before,
+.hoverme-full.skin-arrow .tooltip:after {
+  position: absolute;
+  top: 100%;
+  left: 21px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "";
+}
+.hoverme-full.skin-arrow .tooltip:after {
+  z-index: 2;
+  border: 7px solid transparent;
+  border-top-color: #fff;
+  border-bottom: none;
+}
+.hoverme-full.skin-arrow .tooltip:before {
+  z-index: 1;
+  border: 9px solid transparent;
+  border-top-color: #ccc;
+  border-bottom: none;
+}
