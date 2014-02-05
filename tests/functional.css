@@ -51,3 +51,18 @@
 .hoverme-right:focus .tooltip {
   visibility: visible;
 }
+.hoverme-full {
+  position: relative;
+  display: inline-block;
+}
+.hoverme-full .tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 0%;
+  visibility: hidden;
+  pointer-events: none;
+}
+.hoverme-full:hover .tooltip,
+.hoverme-full:focus .tooltip {
+  visibility: visible;
+}

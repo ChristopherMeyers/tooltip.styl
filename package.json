@@ -3,7 +3,7 @@
   "description": "Full HTML tooltip library for Stylus",
   "scripts": {
     "name": "tooltip.styl",
-    "test": "casperjs test tests/functional.js tests/leftalign.js tests/rightalign.js"
+    "test": "casperjs test tests/functional.js tests/leftalign.js tests/rightalign.js tests/fullwidth.js"
   },
   "dependencies": {
     "phantomjs": "*",

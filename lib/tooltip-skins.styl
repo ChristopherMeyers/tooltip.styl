@@ -26,7 +26,7 @@ tooltip-skin-arrow(
     &:before, &:after {
       position: absolute;
       top: 100%;
-      if ($alignment == 'left'){
+      if ($alignment == 'left' || $alignment == 'full'){
         left: $size * 3;
         transform: translateX(-50%);
       } else if ($alignment == 'center') {

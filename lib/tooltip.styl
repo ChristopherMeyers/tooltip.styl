@@ -20,11 +20,13 @@ tooltip($selector, $mouseOver = false, $alignment = 'center') {
       left: 50%;
     } else if ($alignment == 'right') {
       right: 0%;
+    } else if ($alignment == 'full') {
+      left: 0%;
     } else {
       error('bad type for $alignment');
     }
     visibility: hidden;
-    white-space: nowrap;
+    white-space: nowrap unless $alignment == 'full';
     if ($alignment == 'center') {
       transform: translateX(-50%);
     }
