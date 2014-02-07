@@ -66,3 +66,18 @@
 .hoverme-full:focus .tooltip {
   visibility: visible;
 }
+.hoverme-fullright {
+  position: relative;
+  display: inline-block;
+}
+.hoverme-fullright .tooltip {
+  position: absolute;
+  bottom: 100%;
+  right: 0%;
+  visibility: hidden;
+  pointer-events: none;
+}
+.hoverme-fullright:hover .tooltip,
+.hoverme-fullright:focus .tooltip {
+  visibility: visible;
+}

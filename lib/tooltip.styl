@@ -22,11 +22,13 @@ tooltip($selector, $mouseOver = false, $alignment = 'center') {
       right: 0%;
     } else if ($alignment == 'full') {
       left: 0%;
+    } else if ($alignment == 'fullright') {
+      right: 0%;
     } else {
       error('bad type for $alignment');
     }
     visibility: hidden;
-    white-space: nowrap unless $alignment == 'full';
+    white-space: nowrap unless ($alignment == 'full' || $alignment == 'fullright');
     if ($alignment == 'center') {
       transform: translateX(-50%);
     }
