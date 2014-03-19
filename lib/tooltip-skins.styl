@@ -18,10 +18,22 @@ tooltip-skin-box(
 tooltip-skin-arrow(
                     $selector,
                     $alignment = 'center',
-                    $size = 7px,
+                    $padding = 0.3em .75em,
+                    $border = 1px solid #ccc,
+                    $background = white,
+                    $box-shadow = 0 3px 10px 0 rgba(0,0,0,.4),
                     $border-color = #ccc,
                     $border-width = 2px,
-                    $background = white) {
+                    $size = 7px,
+                    $yOffset = 0.5em) {
+  tooltip-skin-box(
+    $selector,
+    $alignment: $alignment,
+    $padding: $padding,
+    $border: $border,
+    $background: $background,
+    $box-shadow: $box-shadow,
+    $yOffset: $yOffset)
   {$selector} {
     &:before, &:after {
       position: absolute;

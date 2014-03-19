@@ -30,6 +30,13 @@ body {
   box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
   margin-bottom: 0.5em;
 }
+.hoverme.skin-arrow .tooltip {
+  padding: 0.3em 0.75em;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
+  margin-bottom: 0.5em;
+}
 .hoverme.skin-arrow .tooltip:before,
 .hoverme.skin-arrow .tooltip:after {
   position: absolute;
@@ -71,6 +78,13 @@ body {
   visibility: visible;
 }
 .hoverme-left.skin-box .tooltip {
+  padding: 0.3em 0.75em;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
+  margin-bottom: 0.5em;
+}
+.hoverme-left.skin-arrow .tooltip {
   padding: 0.3em 0.75em;
   border: 1px solid #ccc;
   background: #fff;
@@ -124,6 +138,13 @@ body {
   box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
   margin-bottom: 0.5em;
 }
+.hoverme-right.skin-arrow .tooltip {
+  padding: 0.3em 0.75em;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
+  margin-bottom: 0.5em;
+}
 .hoverme-right.skin-arrow .tooltip:before,
 .hoverme-right.skin-arrow .tooltip:after {
   position: absolute;
@@ -170,6 +191,13 @@ body {
   box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
   margin-bottom: 0.5em;
 }
+.hoverme-full.skin-arrow .tooltip {
+  padding: 0.3em 0.75em;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
+  margin-bottom: 0.5em;
+}
 .hoverme-full.skin-arrow .tooltip:before,
 .hoverme-full.skin-arrow .tooltip:after {
   position: absolute;
@@ -210,6 +238,13 @@ body {
   visibility: visible;
 }
 .hoverme-fullright.skin-box .tooltip {
+  padding: 0.3em 0.75em;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
+  margin-bottom: 0.5em;
+}
+.hoverme-fullright.skin-arrow .tooltip {
   padding: 0.3em 0.75em;
   border: 1px solid #ccc;
   background: #fff;
